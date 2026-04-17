@@ -35,22 +35,33 @@ export default function Projects() {
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((p, i) => (
           <motion.a
-            key={i}
-            href={p.link}
-            target="_blank"
-            whileHover={{ scale: 1.03 }}
-            className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-600 transition block"
-          >
-            <div className="h-40 bg-gradient-to-br from-zinc-800 to-zinc-700 flex items-center justify-center text-gray-400">
-              Preview
-            </div>
+  key={i}
+  href={p.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.03 }}
+  className="group relative bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 transition duration-300 hover:-translate-y-1 hover:border-purple-500/40"
+>
+  {/* 🔥 Background hover gradient */}
+  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-purple-500/10 to-blue-500/10"></div>
 
-            <div className="p-6">
-              <h3 className="text-xl font-semibold">{p.title}</h3>
-              <p className="text-gray-400 mt-2">{p.desc}</p>
-              <p className="text-sm text-gray-500 mt-3">{p.tech}</p>
-            </div>
-          </motion.a>
+  {/* ✅ WRAPPED CONTENT */}
+  <div className="relative z-10">
+
+    {/* Preview */}
+    <div className="h-40 bg-gradient-to-br from-zinc-800 to-zinc-700 flex items-center justify-center text-gray-400">
+      Preview
+    </div>
+
+    {/* Text */}
+    <div className="p-6">
+      <h3 className="text-xl font-semibold">{p.title}</h3>
+      <p className="text-gray-400 mt-2">{p.desc}</p>
+      <p className="text-sm text-gray-500 mt-3">{p.tech}</p>
+    </div>
+
+  </div>
+</motion.a>
         ))}
       </div>
     </section>
