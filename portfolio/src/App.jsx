@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-b from-black via-zinc-900 to-black text-white min-h-screen scroll-smooth">
+    <div className="bg-gradient-to-b from-black via-zinc-900 to-black text-white min-h-screen scroll-smooth relative">
 
       {/* BACKGROUND GLOW EFFECT */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -31,8 +31,9 @@ export default function App() {
           Kartikey Chauhan
         </motion.h1>
 
-        <p className="mt-6 text-gray-400 text-lg max-w-xl">
-          I build scalable full-stack systems with React, Spring Boot, and AI.
+        <p className="mt-6 text-gray-400 text-lg max-w-xl leading-relaxed">
+          I design and build full-stack systems that combine clean frontend interfaces,
+          scalable backend architecture, and AI-driven functionality.
         </p>
 
         <div className="mt-8 flex gap-4">
@@ -44,6 +45,8 @@ export default function App() {
           </a>
         </div>
       </section>
+
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* ABOUT */}
       <section id="about" className="max-w-4xl mx-auto px-6 py-24">
@@ -61,6 +64,8 @@ export default function App() {
           Spring Boot backends, and AI integrations to create systems that are both usable and robust.
         </p>
       </section>
+
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* PROJECTS */}
       <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
@@ -102,7 +107,7 @@ export default function App() {
               className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-600 transition block"
             >
 
-    {/* 🔥 IMAGE / PREVIEW SECTION */}
+    {/* IMAGE / PREVIEW SECTION */}
     <div className="h-40 bg-gradient-to-br from-zinc-800 to-zinc-700 flex items-center justify-center text-gray-400">
       Preview
     </div>
@@ -119,6 +124,8 @@ export default function App() {
 
         </div>
       </section>
+
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* CONTACT */}
       <section id="contact" className="text-center py-24">
