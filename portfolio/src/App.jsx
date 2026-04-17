@@ -1,6 +1,33 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function App() {
+
+  const [active, setActive] = useState("home");
+
+  useEffect(() => {
+    const sections = ["Projects", "About", "Contact"];
+
+    const handleScroll = () => {
+      let current = "home";
+
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const top = section.offsetTop - 120;
+          if (window.scrollY >= top) {
+            current = id;
+          }
+        }
+      });
+
+      setActive(current);
+    };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
   return (
     <div className="bg-gradient-to-b from-black via-zinc-900 to-black text-white min-h-screen scroll-smooth relative">
 
@@ -28,15 +55,22 @@ export default function App() {
 
       {["Projects", "About", "Contact"].map((item) => (
         <a
-          key={item}
-          href={`#${item}`}
-          className="relative group hover:text-white transition"
-        >
-          {item}
+    key={item}
+    href={`#${item}`}
+    className={`relative group text-sm font-medium tracking-wide transition
+      ${active === item ? "text-white" : "text-gray-400 hover:text-white"}
+    `}
+  >
+    {item}
 
-          <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-purple-400 group-hover:w-full transition-all duration-300"></span>
-        </a>
-      ))}
+    {/* underline */}
+    <span
+      className={`absolute left-0 -bottom-1 h-[2px] bg-purple-400 transition-all duration-300
+        ${active === item ? "w-full" : "w-0 group-hover:w-full"}
+      `}
+    ></span>
+  </a>
+))}
 
     </div>
 
