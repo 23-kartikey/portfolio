@@ -45,7 +45,7 @@ export default function Navbar({ active }) {
         {/* NAV LINKS */}
         <div className="flex gap-10">
 
-          {["projects", "about", "contact"].map((item) => (
+          {["Projects", "About", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item}`}

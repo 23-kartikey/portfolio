@@ -1,28 +1,29 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 export default function App() {
 
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("projects");
 
-  useEffect(() => {
-    const sections = ["Projects", "About", "Contact"];
+useEffect(() => {
+  const sections = ["Projects", "About", "Contact"];
 
-    const handleScroll = () => {
-      let current = "home";
+  const handleScroll = () => {
+    let current = "projects";
 
-      sections.forEach((id) => {
-        const section = document.getElementById(id);
-        if (section) {
-          const top = section.offsetTop - 120;
-          if (window.scrollY >= top) {
-            current = id;
-          }
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        const top = section.offsetTop - 150;
+        if (window.scrollY >= top) {
+          current = id;
         }
-      });
+      }
+    });
 
-      setActive(current);
-    };
+    setActive(current);
+  };
 
   window.addEventListener("scroll", handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
@@ -38,56 +39,10 @@ export default function App() {
       </div>
       
   {/* NAVBAR */}
-  <nav className="relative text-sm font-medium text-gray-300">
-
-  {/* BACKGROUND */}
-  <div className="absolute inset-0 bg-black/40 backdrop-blur-xl border-b border-zinc-800"></div>
-
-  <div className="relative max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-
-    {/* LEFT */}
-    <h1 className="font-semibold text-lg tracking-wide text-white">
-      Kartikey
-    </h1>
-
-    {/* CENTER LINKS */}
-    <div className="flex items-center gap-10 text-sm text-gray-400">
-
-      {["Projects", "About", "Contact"].map((item) => (
-        <a
-    key={item}
-    href={`#${item}`}
-    className={`relative group text-sm font-medium tracking-wide transition
-      ${active === item ? "text-white" : "text-gray-400 hover:text-white"}
-    `}
-  >
-    {item}
-
-    {/* underline */}
-    <span
-      className={`absolute left-0 -bottom-1 h-[2px] bg-purple-400 transition-all duration-300
-        ${active === item ? "w-full" : "w-0 group-hover:w-full"}
-      `}
-    ></span>
-  </a>
-))}
-
-    </div>
-
-    {/* RIGHT CTA */}
-    <a
-      href="#contact"
-      className="px-5 py-2 rounded-lg text-sm font-medium border border-zinc-700 text-gray-300 hover:text-white hover:border-purple-400 transition"
-    >
-      Work Together
-    </a>
-
-  </div>
-
-</nav>
+  <Navbar active={active} />
 
   {/* HERO */}
-  <section className="h-screen flex flex-col justify-center items-center text-center px-6 relative">
+  <section className="h-screen flex flex-col justify-center items-center text-center px-6 relative pt-28">
 
   {/* HERO GLOW */}
   <div className="absolute w-[600px] h-[600px] bg-purple-500 opacity-20 blur-[150px] top-1/2 -translate-y-1/2"></div>
