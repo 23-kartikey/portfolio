@@ -9,8 +9,9 @@ export default function App() {
        <div className="absolute w-[500px] h-[500px] bg-purple-500 opacity-20 blur-[120px] top-[-100px] left-[-100px]" />
        <div className="absolute w-[400px] h-[400px] bg-blue-500 opacity-20 blur-[120px] bottom-[-100px] right-[-100px]" />
       </div>
-      {/* NAVBAR */}
-      <nav className="fixed top-0 w-full z-50">
+      
+  {/* NAVBAR */}
+  <nav className="relative text-sm font-medium text-gray-300">
 
   {/* BACKGROUND */}
   <div className="absolute inset-0 bg-black/40 backdrop-blur-xl border-b border-zinc-800"></div>
@@ -100,7 +101,7 @@ export default function App() {
       <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* ABOUT */}
-      <section id="about" className="max-w-4xl mx-auto px-6 py-24">
+      <section id="About" className="max-w-4xl mx-auto px-6 py-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +120,7 @@ export default function App() {
       <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* PROJECTS */}
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-24">
+      <section id="Projects" className="max-w-6xl mx-auto px-6 py-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -179,7 +180,7 @@ export default function App() {
       <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
       {/* CONTACT */}
-      <section id="contact" className="text-center py-24">
+      <section id="Contact" className="text-center py-24">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
