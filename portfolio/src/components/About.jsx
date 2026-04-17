@@ -11,11 +11,23 @@ export default function About() {
         About
       </motion.h2>
 
-      <p className="text-gray-400 leading-relaxed">
-        I design and build full-stack applications with a strong focus on backend systems,
-        scalability, and real-world performance. My work combines React frontends,
-        Spring Boot backends, and AI integrations to create systems that are both usable and robust.
-      </p>
+        <div className="space-y-6 text-gray-400 leading-relaxed max-w-2xl">
+
+            <p>
+            I enjoy building things that actually work — not just in theory, but in real use.
+            Whether it’s designing a backend system or shaping a frontend experience, I like understanding how everything fits together.
+            </p>
+
+            <p>
+            I spend a lot of time thinking about structure, performance, and how to make systems simpler without losing capability.
+            Lately, I’ve been exploring how AI can be integrated into applications in a practical way, not just as a feature but as something useful.
+            </p>
+
+            <p>
+            For me, development isn’t just about finishing tasks — it’s about getting better at the craft and building things I can stand behind.
+            </p>
+
+        </div>
     </section>
   );
 }
