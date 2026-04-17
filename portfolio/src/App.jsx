@@ -4,13 +4,13 @@ import Navbar from "./Navbar";
 
 export default function App() {
 
-  const [active, setActive] = useState("projects");
+  const [active, setActive] = useState("Projects");
 
 useEffect(() => {
   const sections = ["Projects", "About", "Contact"];
 
   const handleScroll = () => {
-    let current = "projects";
+    let current = "Projects";
 
     sections.forEach((id) => {
       const section = document.getElementById(id);
