@@ -23,7 +23,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="Projects" className="max-w-6xl mx-auto px-6 py-24">
+    <section id="Projects" className="max-w-6xl mx-auto px-6 py-32">
+        <div className="mb-12 p-6 rounded-2xl border border-zinc-800 bg-zinc-900/60 backdrop-blur">
+            <p className="text-sm text-purple-400 mb-2">Featured Project</p>
+            <h3 className="text-xl font-semibold">Gemini Orbit</h3>
+            <p className="text-gray-400 mt-2">
+                AI-powered knowledge graph generator using Gemini API.
+            </p>
+        </div>
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

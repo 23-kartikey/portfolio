@@ -67,10 +67,10 @@ export default function Navbar({ active }) {
 
         {/* CTA */}
         <a
-          href="#contact"
+          href="#Contact"
           className="px-5 py-2 rounded-lg text-sm font-medium border border-zinc-700 text-gray-300 hover:text-white hover:border-purple-400 transition"
         >
-          Work Together
+          Hire me
         </a>
 
       </div>

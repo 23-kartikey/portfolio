@@ -38,8 +38,8 @@ export default function App() {
 
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute w-[500px] h-[500px] bg-purple-500 opacity-20 blur-[120px] top-[-100px] left-[-100px]" />
-        <div className="absolute w-[400px] h-[400px] bg-blue-500 opacity-20 blur-[120px] bottom-[-100px] right-[-100px]" />
+        <div className="absolute w-[600px] h-[600px] bg-purple-500 opacity-20 blur-[150px] animate-pulse top-[-100px] left-[-100px]" />
+        <div className="absolute w-[500px] h-[500px] bg-blue-500 opacity-20 blur-[150px] animate-pulse bottom-[-100px] right-[-100px]" />
       </div>
 
       <Navbar active={active} />
