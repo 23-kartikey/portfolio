@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6">
+    <section id="Contact" className="py-32 px-6">
 
       <div className="max-w-4xl mx-auto text-center">
 
@@ -21,40 +21,49 @@ export default function Contact() {
           or just talk about systems and tech — feel free to reach out.
         </p>
 
-        {/* EMAIL CARD */}
-        <div className="mt-10 p-6 rounded-2xl border border-zinc-800 bg-zinc-900/60 backdrop-blur inline-block">
+        <div className="mt-12 flex flex-col items-center gap-8">
 
-          <p className="text-sm text-gray-500 mb-2">Email</p>
+  {/* EMAIL (PRIMARY CTA) */}
+  <div className="relative group">
 
-          <a
-            href="mailto:kaarrttiikkeey@gmail.com"
-            className="text-lg text-white font-medium hover:text-purple-400 transition"
-          >
-            kaarrttiikkeey@gmail.com
-          </a>
+    {/* glow */}
+    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
 
-        </div>
+    <a
+      href="mailto:kaarrttiikkeey@gmail.com"
+      className="relative z-10 px-10 py-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur text-center block transition hover:border-pink-200 max-w-md w-full"
+    >
+      <p className="text-sm text-gray-500 mb-2">Email</p>
 
-        {/* SOCIALS */}
-        <div className="mt-8 flex justify-center gap-6">
+      <p className="text-xl font-semibold text-white tracking-wide">
+        kaarrttiikkeey@gmail.com
+      </p>
+    </a>
 
-          <a
-            href="https://github.com/23-kartikey"
-            target="_blank"
-            className="px-5 py-2 rounded-lg border border-zinc-700 text-gray-300 hover:text-white hover:border-purple-400 transition"
-          >
-            GitHub
-          </a>
+  </div>
 
-          <a
-            href="https://www.linkedin.com/in/23-kartikey"
-            target="_blank"
-            className="px-5 py-2 rounded-lg border border-zinc-700 text-gray-300 hover:text-white hover:border-purple-400 transition"
-          >
-            LinkedIn
-          </a>
+  {/* SOCIAL BUTTONS (INLINE, CLEAN) */}
+  <div className="flex gap-4">
 
-        </div>
+    <a
+      href="https://github.com/23-kartikey"
+      target="_blank"
+      className="px-6 py-2 rounded-lg border border-zinc-700 text-gray-300 hover:text-white hover:border-purple-400 hover:scale-105 transition"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/23-kartikey"
+      target="_blank"
+      className="px-6 py-2 rounded-lg border border-zinc-700 text-gray-300 hover:text-white hover:border-blue-400 hover:scale-105 transition"
+    >
+      LinkedIn
+    </a>
+
+  </div>
+
+</div>
 
       </div>
 

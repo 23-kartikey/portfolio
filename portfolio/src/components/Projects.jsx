@@ -5,7 +5,7 @@ const projects = [
     title: "Gemini Orbit",
     desc: "AI-powered knowledge graph generator using Gemini API.",
     tech: "React • Spring Boot • PostgreSQL",
-    link: "https://github.com/23-kartikey/gemini-orbit"
+    link: "https://github.com/23-kartikey/gemini-orbit-ai-backend"
   },
   {
     title: "Taco Cloud",
