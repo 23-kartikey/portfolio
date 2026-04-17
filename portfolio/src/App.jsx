@@ -21,51 +21,74 @@ export default function App() {
         </div>
       </nav>
 
-      {/* HERO */}
-      <section className="h-screen flex flex-col justify-center items-center text-center px-6 relative">
+  {/* HERO */}
+  <section className="min-h-screen flex items-center px-6">
 
-  {/* HERO GLOW */}
-  <div className="absolute w-[600px] h-[600px] bg-purple-500 opacity-20 blur-[150px] top-1/2 -translate-y-1/2"></div>
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-  <motion.h1
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
-    className="text-6xl md:text-7xl font-bold tracking-tight relative z-10"
-  >
-    Kartikey Chauhan
-  </motion.h1>
+    {/* LEFT SIDE (TEXT) */}
+    <div>
 
-  {/* ROLE / TAG */}
-  <p className="mt-3 text-sm text-purple-400 tracking-wide uppercase relative z-10">
-    Full Stack Developer • React • Spring Boot • AI
-  </p>
-
-  {/* MAIN DESCRIPTION */}
-  <p className="mt-6 text-gray-400 text-lg max-w-2xl leading-relaxed relative z-10">
-    I build scalable, production-ready systems that combine strong backend architecture,
-    modern frontend design, and AI-powered functionality.
-  </p>
-
-  {/* BUTTONS */}
-  <div className="mt-10 flex gap-5 relative z-10">
-
-      <a
-        href="https://github.com/23-kartikey"
-        className="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium hover:scale-105 transition"
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-5xl md:text-6xl font-bold leading-tight"
       >
-        View GitHub
-      </a>
+        Building scalable systems
+        <span className="block text-gray-400 mt-2">
+          with React, Spring Boot & AI
+        </span>
+      </motion.h1>
 
-      <a
-        href="https://www.linkedin.com/in/23-kartikey"
-        className="px-6 py-3 rounded-xl border border-zinc-600 hover:bg-white hover:text-black transition"
-      >
-      LinkedIn
-      </a>
+      <p className="mt-6 text-gray-400 max-w-md">
+        I focus on backend architecture, real-world systems, and AI integrations
+        that actually solve problems — not just demos.
+      </p>
+
+      <div className="mt-8 flex gap-4">
+        <a
+          href="https://github.com/23-kartikey"
+          className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl"
+        >
+          View Work
+        </a>
+
+        <a
+          href="#projects"
+          className="px-6 py-3 border border-zinc-600 rounded-xl hover:bg-white hover:text-black transition"
+        >
+          See Projects
+        </a>
+      </div>
 
     </div>
 
-  </section>
+    {/* RIGHT SIDE (VISUAL ELEMENT) */}
+    <div className="relative">
+
+      <div className="absolute inset-0 bg-purple-500 opacity-20 blur-[120px]"></div>
+
+      <div className="relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-xl">
+
+        <p className="text-sm text-gray-500 mb-3">Featured Project</p>
+
+        <h3 className="text-xl font-semibold">Gemini Orbit</h3>
+
+        <p className="text-gray-400 mt-2 text-sm">
+          AI-powered knowledge graph generator using Gemini API.
+        </p>
+
+        <div className="mt-4 text-xs text-gray-500">
+          React • Spring Boot • PostgreSQL
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       <div className="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-10"></div>
 
