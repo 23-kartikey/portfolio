@@ -20,8 +20,7 @@ export default function Hero() {
       </p>
 
       <p className="mt-6 text-gray-400 text-lg max-w-2xl leading-relaxed relative z-10">
-        I build scalable, production-ready systems that combine strong backend architecture,
-        modern frontend design, and AI-powered functionality.
+        I build systems that are meant to last — combining clean backend architecture, thoughtful frontend design, and practical AI integration.
       </p>
 
       <div className="mt-10 flex gap-5 relative z-10">
