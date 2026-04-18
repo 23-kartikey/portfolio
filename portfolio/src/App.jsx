@@ -59,8 +59,8 @@ export default function App() {
       <Contact />
 
       <footer className="text-center py-10 text-gray-500 text-sm">
-        “Program testing can be used to show the presence of bugs, but never to show their absence.”  
-        — Edsger W. Dijkstra
+        “All we have to decide is what to do with the time that is given us.”
+— J.R.R. Tolkien
       </footer>
 
     </div>
