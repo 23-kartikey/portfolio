@@ -6,17 +6,17 @@ import guardImg from "../assets/guard.png";
 
 const projects = [
   {
-    title: "Gemini Orbit",
-    desc: "AI-powered knowledge graph generator using Gemini API.",
-    tech: "React • Spring Boot • PostgreSQL",
-    link: "https://github.com/23-kartikey/gemini-orbit-ai-backend",
-    image: tacoImg
-  },
-  {
     title: "Taco Cloud",
     desc: "Full-stack food ordering system with MVC architecture.",
     tech: "Spring Boot • MySQL",
     link: "https://github.com/23-kartikey/taco-cloud",
+    image: tacoImg
+  },
+  {
+    title: "Gemini Orbit",
+    desc: "AI-powered knowledge graph generator using Gemini API.",
+    tech: "React • Spring Boot • PostgreSQL",
+    link: "https://github.com/23-kartikey/gemini-orbit-ai-backend",
     image: geminiImg
   },
   {
