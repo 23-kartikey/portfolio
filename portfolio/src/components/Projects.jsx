@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import geminiImg from "../assets/gemini.png";
-import tacoImg from "../assets/taco.png";
+import tacoImg from "../assets/taco2.png";
 import notesImg from "../assets/notes.png";
 import guardImg from "../assets/guard.png";
 
