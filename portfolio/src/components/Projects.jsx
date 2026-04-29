@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import geminiImg from "../assets/gemini.png";
 import tacoImg from "../assets/taco.png";
 import notesImg from "../assets/notes.png";
+import guardImg from "../assets/guard.png";
 
 const projects = [
   {
@@ -24,6 +25,13 @@ const projects = [
     tech: "Spring Boot • Redis • PostgreSql • Docker",
     link: "https://github.com/23-kartikey/social-guardrails-api",
     image: guardImg
+  },
+  {
+    title: "Secure Notes API",
+    desc: "JWT authentication system with Spring Security.",
+    tech: "Spring Boot • JWT • MySQL",
+    link: "https://github.com/23-kartikey/secure-notes-api",
+    image: notesImg
   }
 ];
 
