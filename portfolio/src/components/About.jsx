@@ -12,20 +12,20 @@ export default function About() {
       </motion.h2>
 
         <div className="space-y-6 text-gray-400 leading-relaxed max-w-2xl">
-
-            <p>
+          <p>
             I enjoy building things that actually work — not just in theory, but in real use.
-            Whether it’s designing a backend system or shaping a frontend experience, I like understanding how everything fits together.
-            </p>
+            Whether it’s designing a backend system or shaping a frontend experience, I like understanding how everything fits together, including how to validate and test it properly.
+          </p>
 
-            <p>
+          <p>
             I spend a lot of time thinking about structure, performance, and how to make systems simpler without losing capability.
+            I also focus on writing reliable code by incorporating testing practices — from unit testing to integration testing — to ensure systems behave as expected under different conditions.
             Lately, I’ve been exploring how AI can be integrated into applications in a practical way, not just as a feature but as something useful.
-            </p>
+          </p>
 
-            <p>
-            For me, development isn’t just about finishing tasks — it’s about getting better at the craft and building things I can stand behind.
-            </p>
+          <p>
+            For me, development isn’t just about finishing tasks — it’s about getting better at the craft, building things I can stand behind, and ensuring they are robust, testable, and maintainable over time.
+          </p>
 
         </div>
     </section>

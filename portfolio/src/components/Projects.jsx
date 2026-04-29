@@ -19,11 +19,11 @@ const projects = [
     image: geminiImg
   },
   {
-    title: "Secure Notes API",
-    desc: "JWT authentication system with Spring Security.",
-    tech: "Spring Boot • JWT • MySQL",
-    link: "https://github.com/23-kartikey/secure-notes-api",
-    image: notesImg
+    title: "Social Guardrails API",
+    desc: "Backend system enforcing strict constraints on user and bot interactions ",
+    tech: "Spring Boot • Redis • PostgreSql • Docker",
+    link: "https://github.com/23-kartikey/social-guardrails-api",
+    image: guardImg
   }
 ];
 

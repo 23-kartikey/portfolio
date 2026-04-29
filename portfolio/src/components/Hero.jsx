@@ -16,11 +16,11 @@ export default function Hero() {
       </motion.h1>
 
       <p className="mt-3 text-sm text-purple-400 tracking-wide uppercase relative z-10">
-        Full Stack Developer • React • Spring Boot • AI
+        Full Stack Developer • React • Spring Boot • Testing • AI
       </p>
 
       <p className="mt-6 text-gray-400 text-lg max-w-2xl leading-relaxed relative z-10">
-        I build systems that are meant to last — combining clean backend architecture, thoughtful frontend design, and practical AI integration.
+        I build systems that are meant to last — combining clean backend architecture, thoughtful frontend design, and practical testing strategies.
       </p>
 
       <div className="mt-10 flex gap-5 relative z-10">
