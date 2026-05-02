@@ -4,7 +4,6 @@ import tacoImg from "../assets/taco2.png";
 import notesImg from "../assets/notes.png";
 import guardImg from "../assets/guard.png";
 
-//test
 const projects = [
   {
     title: "Taco Cloud",
