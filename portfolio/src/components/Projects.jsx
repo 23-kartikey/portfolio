@@ -3,6 +3,7 @@ import geminiImg from "../assets/gemini.png";
 import tacoImg from "../assets/taco2.png";
 import notesImg from "../assets/notes.png";
 import guardImg from "../assets/guard.png";
+//change
 const projects = [
   {
     title: "Taco Cloud",
